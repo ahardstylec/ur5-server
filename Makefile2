@@ -1,0 +1,49 @@
+####### Compile
+
+main.o: main.c ../libs/helper.h \
+		../libs/tcphelper.h \
+		../libs/ur5lib.h \
+		../libs/ur_kin.h \
+		../libs/base_utils.h \
+		../libs/robotinterface.h \
+		../libs/Configuration.h \
+		../libs/errorCodes.h \
+		../libs/interrupt_utils.h \
+		../libs/startup_utils.h
+
+	$(CC) -c $(CFLAGS) $(INCPATH) -o main.o main.c
+
+ur5.o: ../libs/ur5.c ../libs/ur5.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ur5.o ../libs/ur5.c
+
+ur5lib.o: ../libs/ur5lib.c ../libs/ur5lib.h \
+		../libs/ur_kin.h \
+		../libs/base_utils.h \
+		../libs/robotinterface.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ur5lib.o ../libs/ur5lib.c
+
+ur_kin.o: ../libs/ur_kin.c ../libs/ur_kin.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ur_kin.o ../libs/ur_kin.c
+
+helper.o: ../libs/helper.c ../libs/helper.h \
+		../libs/tcphelper.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o helper.o ../libs/helper.c
+
+tcphelper.o: ../libs/tcphelper.c ../libs/tcphelper.h \
+		../libs/helper.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o tcphelper.o ../libs/tcphelper.c
+
+interrupt_utils.o: ../libs/interrupt_utils.c 
+	$(CC) -c $(CFLAGS) $(INCPATH) -o interrupt_utils.o ../libs/interrupt_utils.c
+
+startup_utils.o: ../libs/startup_utils.c ../libs/robotinterface.h \
+		../libs/microprocessor_commands.h \
+		../libs/microprocessor_definitions.h \
+		../libs/startup_utils.h \
+		../libs/base_utils.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o startup_utils.o ../libs/startup_utils.c
+
+base_utils.o: ../libs/base_utils.c ../libs/base_utils.h \
+		../libs/robotinterface.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o base_utils.o ../libs/base_utils.c
+

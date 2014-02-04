@@ -1,0 +1,63 @@
+file /home/andi/Studium/Bachelorarbeit/software/ur5-server/SConstruct,line 7:
+	Configure(confdir = .sconf_temp)
+scons: Configure: Checking for C header file python2.4/Python.h... 
+scons: Configure: ".sconf_temp/conftest_0.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_0.c <-
+  |  |
+  |  |#include "python2.4/Python.h"
+  |  |
+  |  |
+  |
+scons: Configure: Building ".sconf_temp/conftest_0.o" failed in a previous run and all its sources are up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_0.o -c -g -O2 -Wall -DDEBUG .sconf_temp/conftest_0.c
+  |
+scons: Configure: (cached) no
+
+scons: Configure: Checking for C header file python2.5/Python.h... 
+scons: Configure: ".sconf_temp/conftest_1.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_1.c <-
+  |  |
+  |  |#include "python2.5/Python.h"
+  |  |
+  |  |
+  |
+scons: Configure: Building ".sconf_temp/conftest_1.o" failed in a previous run and all its sources are up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_1.o -c -g -O2 -Wall -DDEBUG .sconf_temp/conftest_1.c
+  |
+scons: Configure: (cached) no
+
+scons: Configure: Checking for C header file python2.6/Python.h... 
+scons: Configure: ".sconf_temp/conftest_2.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_2.c <-
+  |  |
+  |  |#include "python2.6/Python.h"
+  |  |
+  |  |
+  |
+scons: Configure: Building ".sconf_temp/conftest_2.o" failed in a previous run and all its sources are up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_2.o -c -g -O2 -Wall -DDEBUG .sconf_temp/conftest_2.c
+  |
+scons: Configure: (cached) no
+
+scons: Configure: Checking for C header file python2.7/Python.h... 
+scons: Configure: ".sconf_temp/conftest_3.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_3.c <-
+  |  |
+  |  |#include "python2.7/Python.h"
+  |  |
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_3.o" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_3.o -c -g -O2 -Wall -DDEBUG .sconf_temp/conftest_3.c
+  |
+scons: Configure: (cached) yes
+
+
